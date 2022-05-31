@@ -22,6 +22,7 @@ html {
 
 html, body {
     font-size: 1.6rem;
+    min-width: 420px;
 }
 
 /*=== WHATSAPP WINDOW =======================================*/
@@ -175,7 +176,8 @@ header.home .block {
     background-color: var(--secondary-color);
 }
 
-header.home nav .logo {
+/*nav*/
+header.home nav.nav .logo {
     position: relative;
     padding: 3.2rem;
     width: 26rem;
@@ -186,7 +188,7 @@ header.home nav .logo {
     border-top: 1px solid #00D4FA;
 }
 
-header.home nav .logo::before {
+header.home nav.nav .logo::before {
     content: '';
     display: block;
     position: relative;
@@ -197,33 +199,33 @@ header.home nav .logo::before {
     background-color: var(--third-color);
 }
 
-header.home nav .logo p:first-child {
+header.home nav.nav .logo p:first-child {
     font-size: 5rem;
     color: white;
     line-height: 1;
     text-transform: uppercase;
 }
 
-header.home nav .logo p:last-child {
+header.home nav.nav .logo p:last-child {
     font-size: 2.2rem;
     color: white;
     text-transform: uppercase;
 }
 
-header.home nav .logo p:last-child span {
+header.home nav.nav .logo p:last-child span {
     font-size: 2.2rem;
     color: var(--third-color);
     text-transform: uppercase;
 }
 
-header.home nav {
+header.home nav.nav {
     background-color: var(--third-color);
     height: 8.411rem;
     display: flex;
     justify-content: space-between;
 }
 
-header.home nav ul {
+header.home nav.nav ul {
     height: 100%;
     display: flex;
     justify-content: flex-end;
@@ -232,13 +234,118 @@ header.home nav ul {
     gap: 11.4rem;
 }
 
-header.home nav ul li {
+header.home nav.nav ul li {
     list-style: none;
     color: white;
     font-size: 2rem;
 }
 
-header.home nav ul li a {
+header.home nav.nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/*nav-mobile*/
+header.home nav.nav-mobile .logo {
+    height: 100%;
+    padding-inline: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*padding: 3.2rem;*/
+    /*width: 26rem;*/
+    /*height: 20.9rem;*/
+    background-color: var(--primary-color);
+    border-top: 1px solid #00D4FA;
+}
+
+header.home nav.nav-mobile .logo::before {
+    content: '';
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 2px;
+    top: 2.4rem;
+    left: -3rem;
+    background-color: var(--third-color);
+}
+
+header.home nav.nav-mobile .logo p:first-child {
+    font-size: 4rem;
+    color: white;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+header.home nav.nav-mobile .logo p:last-child {
+    font-size: 2.2rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+header.home nav.nav-mobile .logo p:last-child span {
+    font-size: 2.2rem;
+    color: var(--third-color);
+    text-transform: uppercase;
+}
+
+
+header.home nav.nav-mobile {
+    background-color: var(--third-color);
+    height: 8.411rem;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 2rem;
+}
+
+header.home nav.nav-mobile,
+header.home div.nav-mobile-menu {
+    display: none;
+}
+
+header.home nav.nav-mobile .navigation-button-close,
+header.home nav.nav-mobile .navigation-button-open {
+    padding-inline: 4rem;
+    padding-block: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(0,0,0,0);
+    border: none;
+}
+
+header.home nav.nav-mobile .navigation-button-close {
+    display: none;
+}
+
+header.home nav.nav-mobile button.navigation-button:hover svg path {
+    stroke: rgba(255, 255, 255, 0.521);
+}
+
+header.home nav.nav-mobile .navigation-button-close svg path,
+header.home nav.nav-mobile .navigation-button-open svg path {
+    stroke: white;
+}
+
+header.home div.nav-mobile-menu ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding-block: 4rem;
+    background-color: var(--primary-color);
+}
+
+header.home div.nav-mobile-menu ul li {
+    list-style: none;
+    color: white;
+    font-size: 2rem;
+}
+
+header.home div.nav-mobile-menu ul li a {
     text-decoration: none;
     color: white;
 }
@@ -255,57 +362,65 @@ header.home .content {
 header.home .content .col-a {
     grid-area: A;
     align-self: center;
-
 }
 
-header.home .content .col-a a.button-style-1 {
-    left: 62%;
+header.home .content .col-a div.col-items {
+    width: 100%;
+    height: 100%;
+    padding-left: 28%;
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;*/
+}
+
+header.home .content .col-a div.col-items a.button-style-1 {
+    left: 27rem;
     top: -6rem;
 }
 
-header.home .content .col-a::before {
+header.home .content .col-a div.col-items::before {
     content: '';
     display: block;
     height: 1.2rem;
     background-color: var(--third-color);
     position: relative;
-    top: 21.5rem;
-    width: 85%;
-    left: 29%;
+    top: 22.5rem;
+    width: 125%;
+    left: 1rem; /*1%*/
 }
 
-header.home .content .col-a::after {
+header.home .content .col-a div.col-items::after {
     content: '';
     display: block;
     height: 1.6rem;
     width: 1.6rem;
     background-color: var(--primary-color);
     position: relative;
-    top: -35.5rem;
-    left: 34.6%;
+    top: -34.5rem;
+    left: 8rem; /*10.6%;*/
 }
 
-header.home .content .col-a p:first-child {
+header.home .content .col-a div.col-items p:first-child {
     font-size: 18rem;
     color: white;
     position: relative;
-    left: 27%;
+    left: 0;
 }
 
-header.home .content .col-a p:nth-child(2) {
+header.home .content .col-a div.col-items p:nth-child(2) {
     font-size: 14rem;
     color: white;
     position: relative;
-    top: -10rem;
-    left: 35%;
+    top: -9rem;
+    left: 8rem; /*11%;*/
 }
 
-header.home .content .col-a p:nth-child(3) {
+header.home .content .col-a div.col-items p:nth-child(3) {
     font-size: 6rem;
     color: var(--primary-color);
     position: relative;
-    left: 66%;
-    bottom: 13rem;
+    left: 31rem;/*45%;*/
+    bottom: 12rem;
 }
 
 header.home .content .col-b {
@@ -313,6 +428,11 @@ header.home .content .col-b {
     /*align-self: center;
     justify-self: center;*/
     position: relative;
+}
+
+header.home .content .col-b svg {
+    max-height: 100%;
+    max-width: 65%;
 }
 
 header.home .content .col-b svg:nth-child(1) {
@@ -571,7 +691,7 @@ section#seu-publico div.grid .grid-item:nth-child(2) {
 section#seu-publico div.grid .grid-item:nth-child(2) div.dotted-box {
     display: flex;
     flex-direction: column;
-    height: 40%;
+    height: 34rem; /*40%*/
 }
 
 section#seu-publico div.grid .grid-item:nth-child(2) div.dotted-box span {
@@ -608,7 +728,7 @@ section#seu-publico div.grid .grid-item:nth-child(2) div.arrow-box {
     position: relative;
     top: 4rem;
     left: 2rem;
-    height: 30%;
+    height: 26.5rem;/*30%*/
     width: 5%;
     border-right: 1px solid var(--third-color);
     border-top: 1px solid var(--third-color);
@@ -882,4 +1002,196 @@ footer a {
 @keyframes fade {
     from {opacity: .4} 
     to {opacity: 1}
+}
+
+/*=== RESPONSIVE ==========================================================*/
+@media (max-width: 1600px) {
+    :root {
+        font-size: 39.5%;
+    }
+    section#seu-publico div.grid .grid-item:nth-child(2) div.arrow-box svg {
+        top: -1.5rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    /*GENERAL*/
+    .grid-col-2, .grid-col-3, .grid-col-4 {
+        grid-template-columns: 1fr;
+    }
+
+    section#objetivos, section#como-funciona, section#seu-publico, section#contato {
+        height: 100%;
+    }
+
+    section#objetivos {
+        padding-inline: 8rem;
+    }
+
+    /*home*/
+    header.home nav.nav,
+    header.home .block {
+        display: none;
+    }
+
+    header.home nav.nav-mobile {
+        display: flex;
+    }
+
+    header.home .content {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'A A',
+        'C C';
+    }
+
+    header.home .content .col-b {
+        display: none;
+    }
+
+    header.home .content .col-a div.col-items::before {
+        width: 80%;
+    }
+
+    header.home .content .col-a div.col-items p:first-child,
+    header.home .content .col-a div.col-items p:nth-child(2),
+    header.home .content .col-a div.col-items p:nth-child(3) {
+        max-width: 50%;
+    }
+    /*como-funciona*/
+    section#como-funciona div.grid .grid-item:nth-child(1) {
+        padding: 0;
+        padding-block: 4rem;
+        align-items: center;
+    }
+    
+    section#como-funciona div.grid .grid-item:nth-child(1) p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section#como-funciona div.grid .grid-item:nth-child(2) {
+        padding: 0;
+        padding-block: 4rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    /*seu publico*/
+    section#seu-publico div.grid .grid-item:nth-child(1) {
+        padding: 0;
+        padding-block: 4rem;
+        align-items: center;
+    }
+
+    section#seu-publico div.grid .grid-item:nth-child(1) p:nth-child(3),
+    section#seu-publico div.grid .grid-item:nth-child(1) p {
+        text-align: center;
+    }
+
+    section#seu-publico div.grid .grid-item:nth-child(2) {
+        padding: 0;
+        padding-block: 4rem;
+        justify-content: center;
+    }
+
+    section#seu-publico div.grid .grid-item:nth-child(2) div.dotted-box {
+        padding-left: 26rem;
+    }
+
+    section div.centered {
+        padding: 0;
+        padding-block: 4rem;
+        padding-inline: 8.6rem;
+    }
+
+    section#seu-publico a.button-style-1 {
+        transform: translateY(107%);
+    }
+
+    /*relatorio*/
+    section#relatorio div.grid .grid-item:nth-child(4),
+    section#relatorio div.grid .grid-item:nth-child(3),
+    section#relatorio div.grid .grid-item:nth-child(2),
+    section#relatorio div.grid .grid-item:nth-child(1) {
+        justify-self: center;
+    }
+
+    section#relatorio .grid .grid-item:nth-child(1) .circle p {
+        top: 3rem;
+        left: -11rem;
+        font-size: 3.7rem;
+    }
+    section#relatorio .grid .grid-item:nth-child(4) .circle p {
+        top: -1rem;
+        left: 25rem;
+        font-size: 3.7rem;
+    }
+
+    /*contato*/
+    section#contato .grid .grid-item:nth-child(2),
+    section#contato .grid .grid-item:nth-child(1) {
+        align-items: center;
+    }
+    section#contato .grid .grid-item:nth-child(1) p:nth-child(3) {
+        padding-inline: 20%;
+    }
+    section#contato .grid {
+        gap: 0;
+    }
+    section#contato > .grid > .grid-item:nth-child(1),
+    section#contato > .grid > .grid-item:nth-child(2) {
+        padding-block: 5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    header.home .content .col-a div.col-items p:first-child {
+        font-size: 14rem;
+    }
+    header.home .content .col-a div.col-items p:nth-child(2) {
+        font-size: 10rem;
+    }
+    header.home .content .col-a div.col-items p:nth-child(3) {
+        font-size: 3rem;
+        bottom: 11rem;
+    }
+    header.home .content .col-a div.col-items::after {
+        top: -23.5rem;
+        left: 6rem;
+        width: 1rem;
+        height: 1rem;
+    }
+    header.home .content .col-a div.col-items::before {
+        top: 14.5rem;
+        height: 0.7rem;
+    }
+    header.home .content .col-a div.col-items a.button-style-1 {
+        font-size: 1.6rem;
+        left: 24rem;
+    }
+
+    section#seu-publico div.grid .grid-item:nth-child(2) div.dotted-box {
+        padding-left: 20rem;
+    }
+}
+
+@media (max-width: 500px) {
+    /*seu publico*/
+    section#seu-publico div.grid .grid-item:nth-child(2) div.dotted-box {
+        padding-left: 12rem;
+    }
+    .button-style-1 {
+        padding-inline: 6.3rem;
+    }
+}
+
+@media (max-width: 410px) {
+    header.home .content .col-a div.col-items a.button-style-1 {
+        left: 16rem;
+    }
+    section#seu-publico div.grid .grid-item:nth-child(2) div.dotted-box {
+        padding-left: 9rem;
+    }
 }
