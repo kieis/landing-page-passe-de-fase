@@ -1,0 +1,1197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #0F65E0;
+    --secondary-color: #002758;
+    --third-color: #FE10C4;
+    --bg-color: white;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    font-size: 1.6rem;
+    min-width: 420px;
+}
+
+/*=== WHATSAPP WINDOW =======================================*/
+.whatsappButton {
+    position: fixed;
+    bottom: 9rem; 
+    right: 2rem;
+    margin-right: 9rem;
+    margin-top: -10rem;
+    background-color: #23D366;
+    padding: 11px 14px;
+    border-radius: 100%;
+    z-index: 100;
+    transition-duration: .4s;
+}
+
+.whatsappButton:hover {
+    background-color: #25e970;
+}
+
+.whatsappButton svg path {
+    fill: white;
+}
+
+.whatsWindow {
+    position: fixed;
+    width: 25rem;
+    height: 30rem;
+    bottom: 16rem; 
+    right: 1rem;
+    margin-right: 1rem;
+    margin-top: -10rem;
+    background-color: #23D366;
+    border-radius: 2rem;
+    z-index: 100;
+    visibility: hidden;
+}
+
+.whatsWindow p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-color: #23D366;
+    height: 3rem;
+    color: white;
+}
+
+.whatsWindow #whatsInput {
+    border: none;
+    width: 100%;
+    height: 75%;
+    padding: 2rem;
+    resize: none;
+}
+
+.whatsWindow #whatsInput:focus {
+    border: none;
+    outline: none;
+}
+
+.whatsWindow #whatsInput:active {
+    border: none;
+}
+
+.whatsWindow button {
+    border: none;
+    background-color: #23D366;
+    color: white;
+    width: 100%;
+    font-size: larger;
+    height: 4.5rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.whatsWindow button:hover {
+    background-color: #25e970;
+}
+
+.whatsWindow button i {
+    padding-left: 1rem;
+}
+
+/*=== GERAL ==========================================================*/
+.wrapper {
+    padding-inline: 22.6rem;
+}
+
+.centered {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-style-1 {
+    background-color: var(--third-color);
+    color: white;
+    font-size: 2.9rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-inline: 11.3rem;
+    padding-block: 2rem;
+    position: relative;
+}
+
+.button-style-1 span {
+    background-color: var(--primary-color);
+    position: absolute;
+    padding-block: 0.08rem;
+    padding-inline: 1rem;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.grid-col-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-col-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.visible {
+    visibility: visible;
+}
+
+.not-visible {
+    visibility: hidden;
+}
+
+.display {
+    display: block;
+}
+
+/*=== HEADER ==========================================================*/
+header.home {
+    background-color: var(--secondary-color);
+    /*height: 86rem;*/
+}
+
+header.home .block {
+    height: 11.0rem;
+    background-color: var(--secondary-color);
+}
+
+/*nav*/
+header.home nav.nav .logo {
+    position: relative;
+    padding: 3.2rem;
+    width: 26rem;
+    height: 20.9rem;
+    background-color: var(--primary-color);
+    left: 15%; /*290px*/
+    bottom: 70%;
+    border-top: 1px solid #00D4FA;
+}
+
+header.home nav.nav .logo::before {
+    content: '';
+    display: block;
+    position: relative;
+    width: 108%;
+    height: 2px;
+    top: +8.4rem;
+    left: -16%;
+    background-color: var(--third-color);
+}
+
+header.home nav.nav .logo p:first-child {
+    font-size: 5rem;
+    color: white;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+header.home nav.nav .logo p:last-child {
+    font-size: 2.2rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+header.home nav.nav .logo p:last-child span {
+    font-size: 2.2rem;
+    color: var(--third-color);
+    text-transform: uppercase;
+}
+
+header.home nav.nav {
+    background-color: var(--third-color);
+    height: 8.411rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+header.home nav.nav ul {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 15%; /*290px*/
+    gap: 11.4rem;
+}
+
+header.home nav.nav ul li {
+    list-style: none;
+    color: white;
+    font-size: 2rem;
+}
+
+header.home nav.nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/*nav-mobile*/
+header.home nav.nav-mobile .logo {
+    height: 100%;
+    padding-inline: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*padding: 3.2rem;*/
+    /*width: 26rem;*/
+    /*height: 20.9rem;*/
+    background-color: var(--primary-color);
+    border-top: 1px solid #00D4FA;
+}
+
+header.home nav.nav-mobile .logo::before {
+    content: '';
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 2px;
+    top: 2.4rem;
+    left: -3rem;
+    background-color: var(--third-color);
+}
+
+header.home nav.nav-mobile .logo p:first-child {
+    font-size: 4rem;
+    color: white;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+header.home nav.nav-mobile .logo p:last-child {
+    font-size: 2.2rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+header.home nav.nav-mobile .logo p:last-child span {
+    font-size: 2.2rem;
+    color: var(--third-color);
+    text-transform: uppercase;
+}
+
+
+header.home nav.nav-mobile {
+    background-color: var(--third-color);
+    height: 8.411rem;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 2rem;
+}
+
+header.home nav.nav-mobile,
+header.home div.nav-mobile-menu {
+    display: none;
+}
+
+header.home nav.nav-mobile .navigation-button-close,
+header.home nav.nav-mobile .navigation-button-open {
+    padding-inline: 4rem;
+    padding-block: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(0,0,0,0);
+    border: none;
+}
+
+header.home nav.nav-mobile .navigation-button-close {
+    display: none;
+}
+
+header.home nav.nav-mobile button.navigation-button:hover svg path {
+    stroke: rgba(255, 255, 255, 0.521);
+}
+
+header.home nav.nav-mobile .navigation-button-close svg path,
+header.home nav.nav-mobile .navigation-button-open svg path {
+    stroke: white;
+}
+
+header.home div.nav-mobile-menu ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding-block: 4rem;
+    background-color: var(--primary-color);
+}
+
+header.home div.nav-mobile-menu ul li {
+    list-style: none;
+    color: white;
+    font-size: 2rem;
+}
+
+header.home div.nav-mobile-menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+header.home .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    'A B'
+    'C C';
+    padding-block: 2rem;
+}
+
+header.home .content .col-a {
+    grid-area: A;
+    align-self: center;
+}
+
+header.home .content .col-a div.col-items {
+    width: 100%;
+    height: 100%;
+    padding-left: 28%;
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;*/
+}
+
+header.home .content .col-a div.col-items a.button-style-1 {
+    left: 27rem;
+    top: -6rem;
+}
+
+header.home .content .col-a div.col-items::before {
+    content: '';
+    display: block;
+    height: 1.2rem;
+    background-color: var(--third-color);
+    position: relative;
+    top: 22.5rem;
+    width: 125%;
+    left: 1rem; /*1%*/
+}
+
+header.home .content .col-a div.col-items::after {
+    content: '';
+    display: block;
+    height: 1.6rem;
+    width: 1.6rem;
+    background-color: var(--primary-color);
+    position: relative;
+    top: -34.5rem;
+    left: 8rem; /*10.6%;*/
+}
+
+header.home .content .col-a div.col-items p:first-child {
+    font-size: 18rem;
+    color: white;
+    position: relative;
+    left: 0;
+}
+
+header.home .content .col-a div.col-items p:nth-child(2) {
+    font-size: 14rem;
+    color: white;
+    position: relative;
+    top: -9rem;
+    left: 8rem; /*11%;*/
+}
+
+header.home .content .col-a div.col-items p:nth-child(3) {
+    font-size: 6rem;
+    color: var(--primary-color);
+    position: relative;
+    left: 31rem;/*45%;*/
+    bottom: 12rem;
+}
+
+header.home .content .col-b {
+    grid-area: B;
+    /*align-self: center;
+    justify-self: center;*/
+    position: relative;
+}
+
+header.home .content .col-b svg {
+    max-height: 100%;
+    max-width: 65%;
+}
+
+header.home .content .col-b svg:nth-child(1) {
+    position: relative;
+    left: 25%;
+    z-index: 50;
+}
+
+header.home .content .col-b svg:nth-child(2) {
+    position: absolute;
+    left: 25%;
+    z-index: 51;
+}
+
+header.home .content .col-b svg {
+    transform: translateY(0) translateX(0);
+    transition: 500ms;
+}
+
+header.home .content .col-b svg:hover {
+    transform: translateY(-2px) translateX(2px);
+    z-index: 49;
+    filter: brightness(2);
+}
+
+header.home .content .col-c {
+    grid-area: C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+header.home .content .col-c svg.active circle {
+    fill: var(--third-color);
+}
+
+/*=== SECTION ==========================================================*/
+section header {
+    padding: 5.9rem;
+}
+
+section header h2{
+    text-transform: uppercase;
+    font-size: 6rem;
+    color: var(--third-color);
+}
+
+section header p{
+    font-size: 2.8rem;
+    color: #002758;
+    max-width: 65%;
+}
+
+section div.centered {
+    padding: 8.6rem;
+}
+
+section div.grid {
+    display: grid;
+}
+
+/*=== OBJETIVOS ==========================================================*/
+section#objetivos {
+    padding-inline: 27.8rem;
+}
+
+section#objetivos div.centered .button-style-1 {
+    background-color: var(--primary-color);
+}
+
+section#objetivos div.centered .button-style-1 span {
+    background-color: var(--third-color);
+}
+
+section#objetivos div.grid .grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 7.8rem;
+    border: 1px solid #DBDBDB;
+    position: relative;
+}
+
+section#objetivos div.grid .grid-item span:nth-child(4) {
+    display: none;
+}
+
+section#objetivos div.grid .grid-item::before {
+    content: '';
+    display: block;
+    height: 1.6rem;
+    width: 0;
+    background-color: var(--third-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 1s;
+}
+
+section#objetivos div.grid .grid-item:hover::before {
+    content: '';
+    display: block;
+    height: 1.6rem;
+    width: 100%;
+}
+
+section#objetivos div.grid .grid-item:hover {
+    background-color: var(--primary-color);
+}
+
+section#objetivos div.grid .grid-item:hover svg:nth-child(1) path {
+    fill: white;
+}
+
+section#objetivos div.grid .grid-item:hover p:nth-child(2) {
+    background-color: var(--secondary-color);
+    color: white;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+}
+
+section#objetivos div.grid .grid-item:hover p:nth-child(3) {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+section#objetivos div.grid .grid-item:hover span:nth-child(4) {
+    display: block;
+    background-color: var(--third-color);
+    position: absolute;
+    padding-block: 0.8rem;
+    padding-inline: 1rem;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+}
+
+section#objetivos div.grid .grid-item p:nth-child(2) {
+    color: #002758;
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+section#objetivos div.grid .grid-item p:nth-child(3) {
+    color: #656465;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+section#objetivos div.grid {
+    gap: 1.5rem;
+}
+
+/*=== COMO FUNCIONA ==========================================================*/
+section#como-funciona {
+    height: 65rem;
+}
+
+section#como-funciona div.grid {
+    height: 100%;
+}
+
+section#como-funciona div.grid .grid-item:nth-child(1) {
+    background-color: #00398B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 16.2rem;
+}
+
+section#como-funciona div.grid .grid-item:nth-child(1) p {
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: var(--third-color);
+    text-align: right;
+}
+
+section#como-funciona div.grid .grid-item:nth-child(1) p span {
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+section#como-funciona div.grid .grid-item:nth-child(2) {
+    background-color: #2680EB;
+    display: flex;
+    align-items: center;
+    padding-left: 5rem;
+}
+
+section#como-funciona div.grid .grid-item:nth-child(2) ul  {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+section#como-funciona div.grid .grid-item:nth-child(2) ul li {
+    list-style: none;
+    color: white;
+    font-size: 2.8rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+/*=== SEU PUBLICO ==========================================================*/
+section#seu-publico {
+    height: 87.4rem;
+    background-color: #F4F4F4;
+}
+
+section#seu-publico div.grid {
+    height: 100%;
+}
+
+section#seu-publico div.grid .grid-item:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 16.2rem;
+}
+
+section#seu-publico div.grid .grid-item:nth-child(1) p {
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #002758;
+    text-align: right;
+}
+
+section#seu-publico div.grid .grid-item:nth-child(1) p span {
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: var(--third-color);
+}
+
+section#seu-publico div.grid .grid-item:nth-child(1) p:nth-child(3) {
+    font-size: 2.6rem;
+    text-transform: initial;
+    color: #05398B;
+    max-width: 66%;
+    text-align: justify;
+}
+
+section#seu-publico div.grid .grid-item:nth-child(2) {
+    display: flex;
+    align-items: center;
+    padding-left: 5rem;
+}
+
+section#seu-publico div.grid .grid-item:nth-child(2) div.dotted-box {
+    display: flex;
+    flex-direction: column;
+    height: 34rem; /*40%*/
+}
+
+section#seu-publico div.grid .grid-item:nth-child(2) div.dotted-box span {
+    flex: 1;
+    width: 3.2rem;
+    border-bottom: 2px dotted var(--primary-color);
+    border-left: 2px dotted var(--primary-color);
+}
+
+section#seu-publico div.grid .grid-item:nth-child(2) div.dotted-box span:first-child {
+    flex: 1;
+    width: 3.2rem;
+    border-top: 2px dotted var(--primary-color);
+}
+
+section#seu-publico div.grid .grid-item:nth-child(2) div.colored-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    height: 80%;
+    padding-left: 2rem;
+}
+
+section#seu-publico div.grid .grid-item:nth-child(2) div.colored-box p {
+    padding-inline: 12rem;
+    padding-block: 2rem;
+    color: white;
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+section#seu-publico div.grid .grid-item:nth-child(2) div.arrow-box {
+    position: relative;
+    top: 4rem;
+    left: 2rem;
+    height: 26.5rem;/*30%*/
+    width: 5%;
+    border-right: 1px solid var(--third-color);
+    border-top: 1px solid var(--third-color);
+    border-bottom: 1px solid var(--third-color);
+}
+
+section#seu-publico div.grid .grid-item:nth-child(2) div.arrow-box svg {
+    position: relative;
+    top: -0.9rem;
+    left: -0.6rem;
+}
+
+section#seu-publico div.grid .grid-item:nth-child(2) div.vertical-text {
+    position: relative;
+    top: 4rem;
+    left: -5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    transform: rotate(-90deg);
+    font-size: 1.8rem;
+}
+
+section#seu-publico div.grid .grid-item:nth-child(2) div.vertical-text p:first-child {
+    color: var(--third-color);
+}
+
+section#seu-publico div.grid .grid-item:nth-child(2) div.vertical-text p:last-child {
+    color: var(--secondary-color);
+}
+
+section#seu-publico a.button-style-1 {
+    position: relative;
+    transform: translateY(-160%);
+}
+
+/*=== RELATÓRIO ==========================================================*/
+section#relatorio {
+    background-color: white;
+}
+
+section#relatorio div.grid {
+    padding-block: 19.8rem;
+    gap: 12rem;
+}
+
+section#relatorio div.grid .grid-item:nth-child(1) {
+    align-self: center;
+    justify-self: flex-end;
+}
+
+section#relatorio div.grid .grid-item:nth-child(2) {
+    align-self: center;
+    justify-self: flex-start;
+}
+
+section#relatorio div.grid .grid-item:nth-child(2) ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+section#relatorio div.grid .grid-item:nth-child(2) ul li {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+section#relatorio div.grid .grid-item:nth-child(2) ul li p {
+    color: #00398B;
+    font-size: 3.6rem;
+    max-width: 60%;
+}
+
+section#relatorio div.grid .grid-item:nth-child(3) {
+    align-self: center;
+    justify-self: flex-end;
+    font-size: 3.6rem;
+    color: #00398B;
+    max-width: 67%;
+}
+
+section#relatorio .grid .grid-item .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 43.7rem;
+    height: 43.7rem;
+    border-radius: 100%;
+    background-color: #F4F4F4;
+    position: relative;
+}
+
+section#relatorio .grid .grid-item .circle p {
+    text-transform: uppercase;
+    text-align: right;
+    position: absolute;
+    color: #00398B;
+    font-size: 4.7rem;
+}
+
+section#relatorio .grid .grid-item:nth-child(1) .circle p {
+    left: -13rem;
+    top: 5rem;
+}
+
+section#relatorio .grid .grid-item:nth-child(4) .circle p {
+    left: 22rem;
+    top: 2rem;
+}
+
+section#relatorio .grid .grid-item .circle p span {
+    color: var(--third-color);
+}
+
+section#relatorio div.centered {
+    flex-direction: column;
+    padding-bottom: 19.8rem;
+}
+
+section#relatorio div.centered .button-style-1 {
+    background-color: var(--primary-color);
+}
+
+section#relatorio div.centered .button-style-1 span {
+    background-color: var(--third-color);
+}
+
+/*=== CONTATO ==========================================================*/
+section#contato {
+    height: 82.7rem;
+    width: 100%;
+    background-color: #012758;
+}
+
+section#contato .grid {
+    height: 100%;
+    width: 100%;
+    gap: 20rem;
+}
+
+section#contato .grid .grid-item:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 2rem;
+}
+
+section#contato .grid .grid-item:nth-child(1) svg {
+    justify-self: flex-end;
+}
+
+section#contato .grid .grid-item:nth-child(1) p:nth-child(2) {
+    color: white;
+    font-size: 6rem;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+section#contato .grid .grid-item:nth-child(1) p:nth-child(2) span {
+    color: var(--third-color);
+}
+
+section#contato .grid .grid-item:nth-child(1) p:nth-child(3) {
+    color: white;
+    font-size: 2.6rem;
+    text-align: left;
+    padding-left: 50%;
+}
+
+/*form*/
+section#contato .grid .grid-item:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+section#contato .grid .grid-item:nth-child(2) form {
+    display: flex;
+    flex-direction: column;
+}
+
+section#contato .grid .grid-item:nth-child(2) form label {
+    color: white;
+    text-transform: uppercase;
+    padding-block: 1rem;
+}
+
+section#contato .grid .grid-item:nth-child(2) form input[type='email'],
+section#contato .grid .grid-item:nth-child(2) form textarea,
+section#contato .grid .grid-item:nth-child(2) form input[type='text'] {
+    background-color: #003C89;
+    border: none;
+    outline: none;
+    color: white;
+    width: 60rem;
+    height: 6rem;
+    padding: 2rem;
+}
+
+section#contato .grid .grid-item:nth-child(2) form textarea {
+    height: 12rem;
+}
+
+section#contato .grid .grid-item:nth-child(2) form input[type='submit'] {
+    margin-top: 2rem;
+    padding-inline: 2rem;
+    padding-block: 2rem;
+    align-self: flex-end;
+    width: 48%;
+    color: white;
+    background-color: var(--third-color);
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    text-align: center;
+}
+
+section#contato .grid .grid-item:nth-child(2) form .grid {
+    gap: 2rem;
+}
+
+section#contato .grid .grid-item:nth-child(2) form .grid .grid-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: flex-start;
+}
+
+section#contato .grid .grid-item:nth-child(2) form .grid-item input[type='text'] {
+    height: 5rem;
+    width: 100%;
+}
+
+/*=== FOOTER ==========================================================*/
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
+    padding-block: 10rem;
+}
+
+footer p {
+    color: #012758;
+    text-align: center;
+}
+
+footer a {
+    color: var(--primary-color);
+}
+
+/*=== ANIM =============================================*/
+.anim-fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.anim-fade-rev {
+    animation-name: fade-rev;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/*=== RESPONSIVE ==========================================================*/
+@media (max-width: 1600px) {
+    :root {
+        font-size: 39.5%;
+    }
+    section#seu-publico div.grid .grid-item:nth-child(2) div.arrow-box svg {
+        top: -1.5rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    /*GENERAL*/
+    .grid-col-2, .grid-col-3, .grid-col-4 {
+        grid-template-columns: 1fr;
+    }
+
+    section#objetivos, section#como-funciona, section#seu-publico, section#contato {
+        height: 100%;
+    }
+
+    section#objetivos {
+        padding-inline: 8rem;
+    }
+
+    /*home*/
+    header.home nav.nav,
+    header.home .block {
+        display: none;
+    }
+
+    header.home nav.nav-mobile {
+        display: flex;
+    }
+
+    header.home .content {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'A A',
+        'C C';
+    }
+
+    header.home .content .col-b {
+        display: none;
+    }
+
+    header.home .content .col-a div.col-items::before {
+        width: 80%;
+    }
+
+    header.home .content .col-a div.col-items p:first-child,
+    header.home .content .col-a div.col-items p:nth-child(2),
+    header.home .content .col-a div.col-items p:nth-child(3) {
+        max-width: 50%;
+    }
+    /*como-funciona*/
+    section#como-funciona div.grid .grid-item:nth-child(1) {
+        padding: 0;
+        padding-block: 4rem;
+        align-items: center;
+    }
+    
+    section#como-funciona div.grid .grid-item:nth-child(1) p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section#como-funciona div.grid .grid-item:nth-child(2) {
+        padding: 0;
+        padding-block: 4rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    /*seu publico*/
+    section#seu-publico div.grid .grid-item:nth-child(1) {
+        padding: 0;
+        padding-block: 4rem;
+        align-items: center;
+    }
+
+    section#seu-publico div.grid .grid-item:nth-child(1) p:nth-child(3),
+    section#seu-publico div.grid .grid-item:nth-child(1) p {
+        text-align: center;
+    }
+
+    section#seu-publico div.grid .grid-item:nth-child(2) {
+        padding: 0;
+        padding-block: 4rem;
+        justify-content: center;
+    }
+
+    section#seu-publico div.grid .grid-item:nth-child(2) div.dotted-box {
+        padding-left: 26rem;
+    }
+
+    section div.centered {
+        padding: 0;
+        padding-block: 4rem;
+        padding-inline: 8.6rem;
+    }
+
+    section#seu-publico a.button-style-1 {
+        transform: translateY(107%);
+    }
+
+    /*relatorio*/
+    section#relatorio div.grid .grid-item:nth-child(4),
+    section#relatorio div.grid .grid-item:nth-child(3),
+    section#relatorio div.grid .grid-item:nth-child(2),
+    section#relatorio div.grid .grid-item:nth-child(1) {
+        justify-self: center;
+    }
+
+    section#relatorio .grid .grid-item:nth-child(1) .circle p {
+        top: 3rem;
+        left: -11rem;
+        font-size: 3.7rem;
+    }
+    section#relatorio .grid .grid-item:nth-child(4) .circle p {
+        top: -1rem;
+        left: 25rem;
+        font-size: 3.7rem;
+    }
+
+    /*contato*/
+    section#contato .grid .grid-item:nth-child(2),
+    section#contato .grid .grid-item:nth-child(1) {
+        align-items: center;
+    }
+    section#contato .grid .grid-item:nth-child(1) p:nth-child(3) {
+        padding-inline: 20%;
+    }
+    section#contato .grid {
+        gap: 0;
+    }
+    section#contato > .grid > .grid-item:nth-child(1),
+    section#contato > .grid > .grid-item:nth-child(2) {
+        padding-block: 5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    header.home .content .col-a div.col-items p:first-child {
+        font-size: 14rem;
+    }
+    header.home .content .col-a div.col-items p:nth-child(2) {
+        font-size: 10rem;
+    }
+    header.home .content .col-a div.col-items p:nth-child(3) {
+        font-size: 3rem;
+        bottom: 11rem;
+    }
+    header.home .content .col-a div.col-items::after {
+        top: -23.5rem;
+        left: 6rem;
+        width: 1rem;
+        height: 1rem;
+    }
+    header.home .content .col-a div.col-items::before {
+        top: 14.5rem;
+        height: 0.7rem;
+    }
+    header.home .content .col-a div.col-items a.button-style-1 {
+        font-size: 1.6rem;
+        left: 24rem;
+    }
+
+    section#seu-publico div.grid .grid-item:nth-child(2) div.dotted-box {
+        padding-left: 20rem;
+    }
+}
+
+@media (max-width: 500px) {
+    /*seu publico*/
+    section#seu-publico div.grid .grid-item:nth-child(2) div.dotted-box {
+        padding-left: 12rem;
+    }
+    .button-style-1 {
+        padding-inline: 6.3rem;
+    }
+}
+
+@media (max-width: 410px) {
+    header.home .content .col-a div.col-items a.button-style-1 {
+        left: 16rem;
+    }
+    section#seu-publico div.grid .grid-item:nth-child(2) div.dotted-box {
+        padding-left: 9rem;
+    }
+}
