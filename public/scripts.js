@@ -87,6 +87,25 @@ function onCloseMenu() {
     buttonClose.style.display = 'none';
 }
 
+function wzSend(number, msg) {
+    const encoded = encodeURI(msg);
+    let _number = number.replace('+', '');
+    _number = _number.replace('-', '');
+    _number = _number.replace('(', '');
+    _number = _number.replace(')', '');
+    _number = _number.replace(/\s/g, '');
+    window.location.href = `https://wa.me/${_number}/?text=${encoded}`;
+}
+
+function wzSendByWidget(number){
+    const whatsInput = doc.querySelector('#whatsInput');
+    if(whatsInput) {
+        if(whatsInput.value.length > 0) {
+            wzSend(number, whatsInput.value);
+        }
+    }
+}
+
 window.addEventListener('resize', function(event){
     const clientWidth = doc.querySelector('body').clientWidth;
 

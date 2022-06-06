@@ -1,8 +1,8 @@
 <?php get_header(); ?>
-  <section id="objetivos">
+<section id="objetivos">
     <header>
-      <h2>Objetivos</h2>
-      <p>Estamos passando por uma fase difícil, mas o marketing digital está aí para alavancar o seu negócio.</p>
+      <h2><?= the_field('post_1_title') ?></h2>
+      <p><?= the_field('post_1_description') ?></p>
     </header>
     <div class="grid grid-col-3">
       <div class="grid-item">
@@ -11,8 +11,8 @@
             d="M43.33,9.237A23.966,23.966,0,0,0,2.45,26.077a23.679,23.679,0,0,0,3.2,11.914L2.25,50.335l12.691-3.314a24,24,0,0,0,11.441,2.9h.009A23.92,23.92,0,0,0,50.333,26.091a23.632,23.632,0,0,0-7-16.854ZM26.393,45.9h-.009a19.938,19.938,0,0,1-10.128-2.76l-.727-.429L8,44.675l2.01-7.309-.473-.751A19.918,19.918,0,1,1,26.393,45.9ZM37.308,31.066c-.6-.3-3.541-1.739-4.086-1.937s-.948-.3-1.346.3S30.33,31.359,29.98,31.76s-.7.446-1.3.148a16.343,16.343,0,0,1-4.812-2.955,17.983,17.983,0,0,1-3.328-4.123c-.35-.6-.038-.919.263-1.215.269-.267.6-.7.9-1.043a4.015,4.015,0,0,0,.6-.994,1.1,1.1,0,0,0-.049-1.043c-.148-.3-1.346-3.229-1.844-4.421-.487-1.162-.978-1-1.346-1.021-.35-.017-.751-.021-1.148-.021a2.2,2.2,0,0,0-1.6.745,6.673,6.673,0,0,0-2.094,4.967c0,2.928,2.146,5.761,2.442,6.159s4.218,6.411,10.218,8.99A34.682,34.682,0,0,0,30.3,37.187a8.243,8.243,0,0,0,3.767.237c1.149-.171,3.541-1.441,4.039-2.832a4.977,4.977,0,0,0,.35-2.83c-.148-.247-.548-.4-1.148-.7Z"
             transform="translate(-1.538 -1.75)" fill="#026be4" stroke="#fff" stroke-width="1" fill-rule="evenodd" />
         </svg>
-        <p>Gere Conversões por WhatsApp</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec arcu maximus erat tempor luctus.</p>
+        <p><?= the_field('post_1_item_1_title') ?></p>
+        <p><?= the_field('post_1_item_1_description') ?></p>
         <span>
           <svg xmlns="http://www.w3.org/2000/svg" width="14.948" height="14.948" viewBox="0 0 14.948 14.948">
             <g id="arrow-down-right" transform="translate(-5.623 -7.873)">
@@ -46,8 +46,8 @@
               transform="translate(3.589 4.062)" fill="#026be4" />
           </g>
         </svg>
-        <p>Seja Lembrado</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec arcu maximus erat tempor luctus.</p>
+        <p><?= the_field('post_1_item_2_title') ?></p>
+        <p><?= the_field('post_1_item_2_description') ?></p>
         <span>
           <svg xmlns="http://www.w3.org/2000/svg" width="14.948" height="14.948" viewBox="0 0 14.948 14.948">
             <g id="arrow-down-right" transform="translate(-5.623 -7.873)">
@@ -72,8 +72,8 @@
               transform="translate(3.566 1.981)" fill="#026be4" />
           </g>
         </svg>
-        <p>Gere Leads</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec arcu maximus erat tempor luctus.</p>
+        <p><?= the_field('post_1_item_3_title') ?></p>
+        <p><?= the_field('post_1_item_3_description') ?></p>
         <span>
           <svg xmlns="http://www.w3.org/2000/svg" width="14.948" height="14.948" viewBox="0 0 14.948 14.948">
             <g id="arrow-down-right" transform="translate(-5.623 -7.873)">
@@ -93,8 +93,8 @@
             d="M43.33,9.237A23.966,23.966,0,0,0,2.45,26.077a23.679,23.679,0,0,0,3.2,11.914L2.25,50.335l12.691-3.314a24,24,0,0,0,11.441,2.9h.009A23.92,23.92,0,0,0,50.333,26.091a23.632,23.632,0,0,0-7-16.854ZM26.393,45.9h-.009a19.938,19.938,0,0,1-10.128-2.76l-.727-.429L8,44.675l2.01-7.309-.473-.751A19.918,19.918,0,1,1,26.393,45.9ZM37.308,31.066c-.6-.3-3.541-1.739-4.086-1.937s-.948-.3-1.346.3S30.33,31.359,29.98,31.76s-.7.446-1.3.148a16.343,16.343,0,0,1-4.812-2.955,17.983,17.983,0,0,1-3.328-4.123c-.35-.6-.038-.919.263-1.215.269-.267.6-.7.9-1.043a4.015,4.015,0,0,0,.6-.994,1.1,1.1,0,0,0-.049-1.043c-.148-.3-1.346-3.229-1.844-4.421-.487-1.162-.978-1-1.346-1.021-.35-.017-.751-.021-1.148-.021a2.2,2.2,0,0,0-1.6.745,6.673,6.673,0,0,0-2.094,4.967c0,2.928,2.146,5.761,2.442,6.159s4.218,6.411,10.218,8.99A34.682,34.682,0,0,0,30.3,37.187a8.243,8.243,0,0,0,3.767.237c1.149-.171,3.541-1.441,4.039-2.832a4.977,4.977,0,0,0,.35-2.83c-.148-.247-.548-.4-1.148-.7Z"
             transform="translate(-1.538 -1.75)" fill="#026be4" stroke="#fff" stroke-width="1" fill-rule="evenodd" />
         </svg>
-        <p>Continue vendendo com um catálogo online</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec arcu maximus erat tempor luctus.</p>
+        <p><?= the_field('post_1_item_4_title') ?></p>
+        <p><?= the_field('post_1_item_4_description') ?></p>
         <span>
           <svg xmlns="http://www.w3.org/2000/svg" width="14.948" height="14.948" viewBox="0 0 14.948 14.948">
             <g id="arrow-down-right" transform="translate(-5.623 -7.873)">
@@ -114,8 +114,8 @@
             d="M43.33,9.237A23.966,23.966,0,0,0,2.45,26.077a23.679,23.679,0,0,0,3.2,11.914L2.25,50.335l12.691-3.314a24,24,0,0,0,11.441,2.9h.009A23.92,23.92,0,0,0,50.333,26.091a23.632,23.632,0,0,0-7-16.854ZM26.393,45.9h-.009a19.938,19.938,0,0,1-10.128-2.76l-.727-.429L8,44.675l2.01-7.309-.473-.751A19.918,19.918,0,1,1,26.393,45.9ZM37.308,31.066c-.6-.3-3.541-1.739-4.086-1.937s-.948-.3-1.346.3S30.33,31.359,29.98,31.76s-.7.446-1.3.148a16.343,16.343,0,0,1-4.812-2.955,17.983,17.983,0,0,1-3.328-4.123c-.35-.6-.038-.919.263-1.215.269-.267.6-.7.9-1.043a4.015,4.015,0,0,0,.6-.994,1.1,1.1,0,0,0-.049-1.043c-.148-.3-1.346-3.229-1.844-4.421-.487-1.162-.978-1-1.346-1.021-.35-.017-.751-.021-1.148-.021a2.2,2.2,0,0,0-1.6.745,6.673,6.673,0,0,0-2.094,4.967c0,2.928,2.146,5.761,2.442,6.159s4.218,6.411,10.218,8.99A34.682,34.682,0,0,0,30.3,37.187a8.243,8.243,0,0,0,3.767.237c1.149-.171,3.541-1.441,4.039-2.832a4.977,4.977,0,0,0,.35-2.83c-.148-.247-.548-.4-1.148-.7Z"
             transform="translate(-1.538 -1.75)" fill="#026be4" stroke="#fff" stroke-width="1" fill-rule="evenodd" />
         </svg>
-        <p>Público<br>Engajado</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec arcu maximus erat tempor luctus.</p>
+        <p><?= the_field('post_1_item_5_title') ?></p>
+        <p><?= the_field('post_1_item_5_description') ?></p>
         <span>
           <svg xmlns="http://www.w3.org/2000/svg" width="14.948" height="14.948" viewBox="0 0 14.948 14.948">
             <g id="arrow-down-right" transform="translate(-5.623 -7.873)">
@@ -135,8 +135,8 @@
             d="M43.33,9.237A23.966,23.966,0,0,0,2.45,26.077a23.679,23.679,0,0,0,3.2,11.914L2.25,50.335l12.691-3.314a24,24,0,0,0,11.441,2.9h.009A23.92,23.92,0,0,0,50.333,26.091a23.632,23.632,0,0,0-7-16.854ZM26.393,45.9h-.009a19.938,19.938,0,0,1-10.128-2.76l-.727-.429L8,44.675l2.01-7.309-.473-.751A19.918,19.918,0,1,1,26.393,45.9ZM37.308,31.066c-.6-.3-3.541-1.739-4.086-1.937s-.948-.3-1.346.3S30.33,31.359,29.98,31.76s-.7.446-1.3.148a16.343,16.343,0,0,1-4.812-2.955,17.983,17.983,0,0,1-3.328-4.123c-.35-.6-.038-.919.263-1.215.269-.267.6-.7.9-1.043a4.015,4.015,0,0,0,.6-.994,1.1,1.1,0,0,0-.049-1.043c-.148-.3-1.346-3.229-1.844-4.421-.487-1.162-.978-1-1.346-1.021-.35-.017-.751-.021-1.148-.021a2.2,2.2,0,0,0-1.6.745,6.673,6.673,0,0,0-2.094,4.967c0,2.928,2.146,5.761,2.442,6.159s4.218,6.411,10.218,8.99A34.682,34.682,0,0,0,30.3,37.187a8.243,8.243,0,0,0,3.767.237c1.149-.171,3.541-1.441,4.039-2.832a4.977,4.977,0,0,0,.35-2.83c-.148-.247-.548-.4-1.148-.7Z"
             transform="translate(-1.538 -1.75)" fill="#026be4" stroke="#fff" stroke-width="1" fill-rule="evenodd" />
         </svg>
-        <p>Audiência<br>Interessada</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec arcu maximus erat tempor luctus.</p>
+        <p><?= the_field('post_1_item_6_title') ?></p>
+        <p><?= the_field('post_1_item_6_description') ?></p>
         <span>
           <svg xmlns="http://www.w3.org/2000/svg" width="14.948" height="14.948" viewBox="0 0 14.948 14.948">
             <g id="arrow-down-right" transform="translate(-5.623 -7.873)">
@@ -152,7 +152,7 @@
       </div>
     </div>
     <div class="centered">
-      <a class="button-style-1" href="#">Eu quero participar
+      <a class="button-style-1" href="<?= the_field('post_1_button_link') ?>"><?= the_field('post_1_button_text') ?>
         <span>
           <svg xmlns="http://www.w3.org/2000/svg" width="14.948" height="14.948" viewBox="0 0 14.948 14.948">
             <g id="arrow-down-right" transform="translate(-5.623 -7.873)">
@@ -305,7 +305,7 @@
             </g>
           </g>
         </svg>
-        <p>saiba como<br><span>funciona</span></p>
+        <p><?= the_field('post_2_title') ?></p>
       </div>
       <div class="grid-item">
         <ul>
@@ -317,7 +317,7 @@
                   transform="translate(0 0)" fill="#00398b" fill-rule="evenodd" />
               </g>
             </svg>
-            Montaremos o seu planejamento
+            <?= the_field('post_2_item_1') ?>
           </li>
           <li>
             <svg xmlns="http://www.w3.org/2000/svg" width="18.189" height="14.474" viewBox="0 0 18.189 14.474">
@@ -327,7 +327,7 @@
                   transform="translate(0 0)" fill="#00398b" fill-rule="evenodd" />
               </g>
             </svg>
-            Criaremos todas as artes
+            <?= the_field('post_2_item_2') ?>
           </li>
           <li>
             <svg xmlns="http://www.w3.org/2000/svg" width="18.189" height="14.474" viewBox="0 0 18.189 14.474">
@@ -337,7 +337,7 @@
                   transform="translate(0 0)" fill="#00398b" fill-rule="evenodd" />
               </g>
             </svg>
-            Anunciaremos em busca de resultados
+            <?= the_field('post_2_item_3') ?>
           </li>
           <li>
             <svg xmlns="http://www.w3.org/2000/svg" width="18.189" height="14.474" viewBox="0 0 18.189 14.474">
@@ -347,7 +347,7 @@
                   transform="translate(0 0)" fill="#00398b" fill-rule="evenodd" />
               </g>
             </svg>
-            Analisaremos os dados
+            <?= the_field('post_2_item_4') ?>
           </li>
           <li>
             <svg xmlns="http://www.w3.org/2000/svg" width="18.189" height="14.474" viewBox="0 0 18.189 14.474">
@@ -357,7 +357,7 @@
                   transform="translate(0 0)" fill="#00398b" fill-rule="evenodd" />
               </g>
             </svg>
-            Geraremos relatórios
+            <?= the_field('post_2_item_5') ?>
           </li>
           <li>
             <svg xmlns="http://www.w3.org/2000/svg" width="18.189" height="14.474" viewBox="0 0 18.189 14.474">
@@ -367,7 +367,7 @@
                   transform="translate(0 0)" fill="#00398b" fill-rule="evenodd" />
               </g>
             </svg>
-            Você não precisará fazer nada
+            <?= the_field('post_2_item_6') ?>
           </li>
           <li>
             <svg xmlns="http://www.w3.org/2000/svg" width="18.189" height="14.474" viewBox="0 0 18.189 14.474">
@@ -377,7 +377,7 @@
                   transform="translate(0 0)" fill="#00398b" fill-rule="evenodd" />
               </g>
             </svg>
-            Apenas colher os resultados
+            <?= the_field('post_2_item_7') ?>
           </li>
         </ul>
       </div>
@@ -507,8 +507,8 @@
             </g>
           </g>
         </svg>
-        <p>Seu público<br><span>Onde ele estiver</span></p>
-        <p>Estamos passando por uma fase difícil, mas o marketing digital está aí para alavancar o seu negócio.</p>
+        <p><?= the_field('post_3_title') ?></p>
+        <p><?= the_field('post_3_description') ?></p>
       </div>
       <div class="grid-item">
         <div class="dotted-box">
@@ -518,11 +518,11 @@
           <span></span>
         </div>
         <div class="colored-box">
-          <p class="colored-item" style="background-color: var(--secondary-color);">Atrair</p>
-          <p class="colored-item" style="background-color: var(--third-color);">Visita seu site/Landing</p>
-          <p class="colored-item" style="background-color: var(--primary-color);">Rastreamos o visitante</p>
-          <p class="colored-item" style="background-color: var(--primary-color);">Dia a dia do visitante</p>
-          <p class="colored-item" style="background-color: var(--third-color);">Nossa publicidade</p>
+          <p class="colored-item" style="background-color: var(--secondary-color);"><?= the_field('post_3_item_1') ?></p>
+          <p class="colored-item" style="background-color: var(--third-color);"><?= the_field('post_3_item_2') ?></p>
+          <p class="colored-item" style="background-color: var(--primary-color);"><?= the_field('post_3_item_3') ?></p>
+          <p class="colored-item" style="background-color: var(--primary-color);"><?= the_field('post_3_item_4') ?></p>
+          <p class="colored-item" style="background-color: var(--third-color);"><?= the_field('post_3_item_5') ?></p>
         </div>
         <div class="arrow-box">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 16 18">
@@ -531,13 +531,13 @@
           </svg>
         </div>
         <div class="vertical-text">
-          <p>Visitante de volta ao seu site.</p>
-          <p>CONVERSÃO</p>
+          <p><?= the_field('post_3_item_6') ?></p>
+          <p><?= the_field('post_3_item_7') ?></p>
         </div>
       </div>
     </div>
     <div class="centered">
-      <a class="button-style-1" href="#">Eu quero participar
+      <a class="button-style-1" href="<?= the_field('post_3_button_link') ?>"><?= the_field('post_3_button_text') ?>
         <span>
           <svg xmlns="http://www.w3.org/2000/svg" width="14.948" height="14.948" viewBox="0 0 14.948 14.948">
             <g id="arrow-down-right" transform="translate(-5.623 -7.873)">
@@ -560,7 +560,7 @@
       <div class="grid grid-col-2">
         <div class="grid-item">
           <div class="circle">
-            <p>relatório<br><span>mensal</span></p>
+            <p><?= the_field('post_4_item_1') ?></p>
             <svg id="Grupo_101" data-name="Grupo 101" xmlns="http://www.w3.org/2000/svg" width="283.629"
               height="240.785" viewBox="0 0 283.629 240.785">
               <g id="Grupo_42" data-name="Grupo 42" transform="translate(110.202 0)">
@@ -761,7 +761,7 @@
                   d="M31.745,11.413a2.457,2.457,0,1,1,3.508,3.44L22.179,31.2a2.457,2.457,0,0,1-3.537.065L9.978,22.595a2.457,2.457,0,1,1,3.472-3.472l6.859,6.854L31.682,11.486a.774.774,0,0,1,.066-.071Z"
                   transform="translate(-9.182 -10.676)" fill="#fe10c4" fill-rule="evenodd" />
               </svg>
-              <p>Saiba quantas pessoas conheceram o seu negócio </p>
+              <p><?= the_field('post_4_item_2_1') ?></p>
             </li>
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" width="26.774" height="21.305" viewBox="0 0 26.774 21.305">
@@ -769,7 +769,7 @@
                   d="M31.745,11.413a2.457,2.457,0,1,1,3.508,3.44L22.179,31.2a2.457,2.457,0,0,1-3.537.065L9.978,22.595a2.457,2.457,0,1,1,3.472-3.472l6.859,6.854L31.682,11.486a.774.774,0,0,1,.066-.071Z"
                   transform="translate(-9.182 -10.676)" fill="#fe10c4" fill-rule="evenodd" />
               </svg>
-              <p>A quantidade de leads gerados</p>
+              <p><?= the_field('post_4_item_2_2') ?></p>
             </li>
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" width="26.774" height="21.305" viewBox="0 0 26.774 21.305">
@@ -777,19 +777,16 @@
                   d="M31.745,11.413a2.457,2.457,0,1,1,3.508,3.44L22.179,31.2a2.457,2.457,0,0,1-3.537.065L9.978,22.595a2.457,2.457,0,1,1,3.472-3.472l6.859,6.854L31.682,11.486a.774.774,0,0,1,.066-.071Z"
                   transform="translate(-9.182 -10.676)" fill="#fe10c4" fill-rule="evenodd" />
               </svg>
-              <p>Próximos passos de forma estratégica</p>
+              <p><?= the_field('post_4_item_2_3') ?></p>
             </li>
           </ul>
         </div>
         <div class="grid-item">
-          <p>
-            Tudo planejado de acordo com a necessidade do seu negócio. Tenha em mãos todas a estratégias necessárias
-            para entrar no jogo.
-          </p>
+          <p><?= the_field('post_4_item_3') ?></p>
         </div>
         <div class="grid-item">
           <div class="circle">
-            <p>planejamento<br><span>mensal</span></p>
+            <p><?= the_field('post_4_item_4') ?></p>
             <svg id="Grupo_40" data-name="Grupo 40" xmlns="http://www.w3.org/2000/svg" width="307.181" height="257.207"
               viewBox="0 0 307.181 257.207">
               <g id="Grupo_5" data-name="Grupo 5" transform="translate(42.652 37.679)">
@@ -916,7 +913,7 @@
           </div>
         </div>
       </div>
-      <a class="button-style-1" href="#">Eu quero participar
+      <a class="button-style-1" href="<?= the_field('post_4_button_link') ?>"><?= the_field('post_4_button_text') ?>
         <span>
           <svg xmlns="http://www.w3.org/2000/svg" width="14.948" height="14.948" viewBox="0 0 14.948 14.948">
             <g id="arrow-down-right" transform="translate(-5.623 -7.873)">
@@ -1130,36 +1127,36 @@
             </g>
           </g>
         </svg>
-        <p>eu quero ir para<br><span>o próximo nível</span></p>
-        <p>Estamos passando por uma fase difícil, mas o marketing digital está aí para alavancar o seu negócio.</p>
+        <p><?= the_field('post_5_title') ?></p>
+        <p><?= the_field('post_5_description') ?></p>
       </div>
       <div class="grid-item">
         <form action="minhaIncrivelApi" method="post">
-          <label for="inputNome">Seu Nome</label>
+          <label for="inputNome"><?= the_field('post_5_input_name') ?></label>
           <input type="text" name="nome" id="inputNome">
-          <label for="inputEmail">Email</label>
+          <label for="inputEmail"><?= the_field('post_5_input_email') ?></label>
           <input type="email" name="email" id="inputEmail">
           <div class="grid grid-col-2">
             <div class="grid-item">
-              <label for="inputTelefone">Telefone</label>
+              <label for="inputTelefone"><?= the_field('post_5_input_tel') ?></label>
               <input type="text" name="telefone" id="inputTelefone">
             </div>
             <div class="grid-item">
-              <label for="inputSite">Site da Empresa</label>
+              <label for="inputSite"><?= the_field('post_5_input_company') ?></label>
               <input type="text" name="site" id="inputSite">
             </div>
             <div class="grid-item">
-              <label for="inputInstagram">Instagram</label>
+              <label for="inputInstagram"><?= the_field('post_5_input_instagram') ?></label>
               <input type="text" name="instagram" id="inputInstagram">
             </div>
             <div class="grid-item">
-              <label for="inputFacebook">Facebook</label>
+              <label for="inputFacebook"><?= the_field('post_5_input_facebook') ?></label>
               <input type="text" name="facebook" id="inputFacebook">
             </div>
           </div>
-          <label for="inputMaiorDesejo">Qual o seu maior desejo?</label>
+          <label for="inputMaiorDesejo"><?= the_field('post_5_input_dream') ?></label>
           <textarea name="maiorDesejo" id="inputMaiorDesejo" cols="30" rows="10" style="resize: none;"></textarea>
-          <input type="submit" value="ENVIAR">
+          <input type="submit" value="<?= the_field('post_5_input_submit') ?>">
         </form>
       </div>
     </div>
@@ -1167,10 +1164,10 @@
 
   <section>
     <div id="whatswindow" class="whatsWindow">
-      <p>Nome do site</p>
+      <p><?= the_field('wsp_title') ?></p>
       <textarea name="whatsText" rows="14" cols="10" wrap="soft" id="whatsInput"
-        placeholder="Escreva sua mensagem aqui.">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, libero. Quasi perferendis rerum, cumque quaerat molestiae, et voluptatibus nam soluta, id repellat nulla consectetur? Itaque tenetur voluptatem deserunt repellat quas.</textarea>
-      <button class="whats-send-button" onclick="wzSendByWidget('9999999')">Enviar Whatsapp</button>
+        placeholder="Escreva sua mensagem aqui."><?= the_field('wsp_message') ?></textarea>
+      <button class="whats-send-button" onclick="wzSendByWidget('<?= the_field(`wsp_submit_number`) ?>')"><?= the_field('wsp_submit_text') ?></button>
     </div>
 
     <a class="whatsappButton" onclick="onWhatsWindow()"><svg xmlns="http://www.w3.org/2000/svg" width="28.343"

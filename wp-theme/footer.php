@@ -1,7 +1,6 @@
   <footer>
-    <p>Aenean consequat at quam vitae rhoncus. Nullam facilisis sapien non aliquet volutpat.<br> Donec sollicitudin,
-      magna sit amet interdum tempus.</p>
-    <a href="mailto:contato@passedefase.com.br">contato@passedefase.com.br</a>
+    <p><?= the_field('footer_message') ?></p>
+    <a href="mailto:<?= the_field('footer_contact') ?>"><?= the_field('footer_contact') ?></a>
   <?php wp_footer(); ?>
   </footer>
 </body>
